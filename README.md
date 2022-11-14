@@ -1,1 +1,0 @@
-# canerberktas.github.io
