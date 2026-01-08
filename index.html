@@ -1,95 +1,278 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Caner Berktas</title>
+  <title>Caner Berktas | GitHub</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Web Developer specializing in modern websites, CMS solutions, and custom web applications." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b0f1a;
+      --card: #12172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: rgba(56,189,248,0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background .3s, color .3s;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header span {
+      color: var(--accent);
+    }
+
+    .toggle {
+      cursor: pointer;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      color: var(--text);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1rem 4rem;
+      display: grid;
+      gap: 3rem;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.2rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: all .25s ease;
+      position: relative;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      box-shadow: 0 0 0 transparent;
+      transition: box-shadow .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .card:hover::after {
+      box-shadow: 0 0 20px rgba(56,189,248,0.15);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: .4rem;
+      font-size: 1.05rem;
+    }
+
+    .card span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+  </style>
 </head>
-<!--  edit contain 1 -->
-<body>
 
-  <div class="container">
-    <nav>
-      <ul>
-        <li id="about">/hakkımda</li>&nbsp;&nbsp;
-        <li id="contact">/iletisim</li>&nbsp;&nbsp;
-      </ul>
-    </nav>
-  </br>
-</br>
-</br>
-</br>
-</br>
-    <main>
-	
-      <h1>Caner&#128128;Berktas@$<span class="cursor">|</span></h1>
-      <h3>Servisler:</h3>
-     <div class="process">
- <div class="box">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Ofansif%2FDefansif+Siber+G%C3%BCvenlik"></img>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Adli+Bili%C5%9Fim+(Forensic)"></img>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Son+Kullan%C4%B1c%C4%B1+G%C3%BCvenli%C4%9Fi"></img>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Windows%2FLinux+Taray%C4%B1c%C4%B1+Otomasyonu"></img>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Android+Otomasyonu"></img>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=E-Ticaret+%C3%87%C3%B6z%C3%BCmleri"></img>
-	<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100000&color=00AA00&multiline=true&width=435&lines=Portfolyo%2FLansman+Scriptleri"></img>
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="canerberktas" data-color="#FFDD00" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+<body data-theme="dark">
+
+<header>
+  <h1>Caner <span>Berktas</span></h1>
+  <button class="toggle" onclick="toggleTheme()">Light / Dark</button>
+</header>
+
+<main>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>Hakkında</h2>
+    <p>
+Siber Güvenlik, Linux Sistemleri ve Web Teknolojileri konularında uzmanlaşmış bilgi teknolojileri uzmanı.    </p>
+  </section>
+
+  <!-- PROFESSIONAL LINKS -->
+<section>
+  <h2>Profesyonel Bağlantılar</h2>
+  <div class="grid">
+
+    <a class="card" href="https://www.linkedin.com/in/canerberktas" target="_blank" rel="noopener">
+      <strong>LinkedIn</strong>
+      <span>Profesyonel deneyim, kariyer geçmişi ve iş ağı.</span>
+    </a>
+
+    <a class="card" href="https://github.com/canerberktas" target="_blank" rel="noopener">
+      <strong>GitHub</strong>
+      <span>Açık kaynak projeler ve kişisel çalışmalar.</span>
+    </a>
+
   </div>
-  
-</div> 
-    </main>
+</section>
+
+  <!-- SERVICES -->
+<section>
+  <h2>Hizmetler</h2>
+  <div class="grid">
+    
+    <a class="card">
+      <strong>Siber Güvenlik Danışmanlığı</strong>
+      <span>Pentest (Web, Mobil, Network), güvenlik sıkılaştırma, firewall yapılandırması ve DDoS koruma çözümleri sunar.</span>
+    </a>
+
+    <a class="card">
+      <strong>Sunucu Güvenliği & Optimizasyonu</strong>
+      <span>Linux ve Windwos sunucular için güvenlik sıkılaştırması, performans optimizasyonu ve izleme çözümleri sağlar.</span>
+    </a>
+
+    <a class="card">
+      <strong>Windows, Linux & Android Otomasyon Çözümleri</strong>
+      <span>İş süreçlerini hızlandırmak için masaüstü, sunucu ve mobil platformlara yönelik otomasyon çözümleri geliştirir.</span>
+    </a>
+    
+    <a class="card">
+      <strong>Kurumsal Web Sitesi & Dijital Dönüşüm Danışmanlığı</strong>
+      <span>Markalar için modern, hızlı, güvenli ve SEO uyumlu kurumsal web siteleri geliştirir.</span>
+    </a>
+
+    <a class="card">
+      <strong>Web Uygulama Geliştirme</strong>
+      <span>İş süreçlerine özel, ölçeklenebilir ve yüksek performanslı web tabanlı yazılımlar sunar.</span>
+    </a>
+
+    <a class="card">
+      <strong>WordPress Kurulum & Geliştirme</strong>
+      <span>WordPress kurulumu, özel tema kodlama ve ihtiyaca yönelik eklenti geliştirme hizmetleri sunar.</span>
+    </a>
+
+    <a class="card">
+      <strong>E-Ticaret Sitesi</strong>
+      <span>WordPress ve WooCommerce altyapısı ile güvenli ve satış odaklı e-ticaret çözümleri geliştirir.</span>
+    </a>
+
+    <a class="card">
+      <strong>Forum Sitesi Kurulumu & Eklenti Geliştirme</strong>
+      <span>Discourse, NodeBB ve Flarum gibi modern altyapılarla profesyonel forum siteleri kurulumu, yapılandırması ve ihtiyaca yönelik özel eklenti geliştirir.</span>
+    </a>
+
+    <a class="card">
+      <strong>Web Sitesi Optimizasyonu</strong>
+      <span>Hız, performans ve kullanıcı deneyimi odaklı teknik optimizasyon çalışmaları yapar.</span>
+    </a>
+
+    <a class="card">
+      <strong>SEO Hizmetleri</strong>
+      <span>Teknik SEO, iç SEO ve dış SEO çalışmaları ile arama motoru görünürlüğünü artırır.</span>
+    </a>
+
+    <a class="card">
+      <strong>Backlink</strong>
+      <span>Yüksek otoriteli ve güvenilir sitelerden backlink çalışmaları ile SEO gücü kazandırır.</span>
+    </a>
+
   </div>
+</section>
 
-<!--  edit contain 1 -->
-  <div class="hidden">
-    <div id="about-content">
-      <h2>Hakkımda:$<span class="cursor">|</span></h2>
-      <p>Merhaba, ben <a href="https://github.com/canerberktas" target="_blank">Caner Berktaş</a>. Ofansif Siber Güvenlik ile ilgileniyorum.</p>
-      <p>
-        
-        Penetrasyon testleri yapabilir, hayalinizdeki yazılımı uygun dil ile kodlayabilirim. Bilişim altyapınız saldırıya mağruz kalıyorsa bunu önlemek için danışmanlık verebilirim. Aynı zamanda soğuk satış için e-ticaret stratejisi oluşturabilirim.
-        
 
-      </p>
+  <!-- GITHUB PROJECTS -->
+  <section>
+    <h2>GitHub Projects</h2>
+    <div id="repos" class="grid"></div>
+  </section>
 
-<h3>Hesaplarım:</h3>
-      <ul>
-        
-          
-        
-        
-          <a href="https://www.linkedin.com/in/canerberktas/" target="_blank"><img src="https://img.icons8.com/nolan/64/linkedin.png"/></a>
-        
-        
-          <a href="https://github.com/canerberktas" target="_blank"><img src="https://img.icons8.com/nolan/64/github.png"/></a>
-        
-        
-      </ul>	 
-	 
-    </div>
+</main>
 
-    <div id="contact-content">
-      <h2>İletişim:$<span class="cursor">|</span></h2>
-      <p>Herhangi bir projeniz veya fikriniz varsa benimle iletişime geçmekten çekinmeyin.</p>
-      <ul>
-        <li>Telefon: +90 552 549 64 36</li>
-        <li>Mail: canerberktass@gmail.com</li>
-      </ul>
-    </div>
-	
-<footer aline="center">
-
-  
-  
-
+<footer>
+  © 2026 Caner Berktaş
 </footer>
 
-  <script src="winbox.bundle.js"></script>
-  <script src="main.js"></script>
+<script>
+  function toggleTheme() {
+    const body = document.body;
+    body.dataset.theme = body.dataset.theme === "dark" ? "light" : "dark";
+  }
+
+  async function loadRepos() {
+    const res = await fetch("https://api.github.com/users/canerberktas/repos");
+    const data = await res.json();
+    const container = document.getElementById("repos");
+
+    data
+      .filter(repo => !repo.fork)
+      .slice(0, 6)
+      .forEach(repo => {
+        const el = document.createElement("a");
+        el.className = "card";
+        el.href = repo.html_url;
+        el.target = "_blank";
+        el.innerHTML = `
+          <strong>${repo.name}</strong>
+          <span>${repo.description || "No description provided"}</span>
+        `;
+        container.appendChild(el);
+      });
+  }
+
+  loadRepos();
+</script>
 
 </body>
-
 </html>
